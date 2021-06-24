@@ -16,7 +16,7 @@ const bookController = require('./bookController')
 
 // User
 router.route('/user')
-    .get(userController.get)
+    .get(userController.getAll)
     .post(userController.post)
     .delete(userController.deleteAll)
 
@@ -32,6 +32,7 @@ router.route('/getuser/:name')
 
 // Book
 router.route('/book')
+    .get(bookController.getAll)
     .post(bookController.post)
 
 // Book ID
